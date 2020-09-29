@@ -1,0 +1,22 @@
+@charset "utf-8";
+
+/* Import Bulma Utilities */
+@import "~bulma/sass/utilities/_all";
+
+/* Import our defined variables */
+@import "./variables.scss";
+
+/* Import the rest of Bulma */
+@import "~bulma";
+
+/* Import some transitions styles */
+@import "./transitions.scss";
+
+.page-enter-active,
+.page-leave-active {
+  transition: opacity 0.15s;
+}
+.page-enter,
+.page-leave-to {
+  opacity: 0;
+}
