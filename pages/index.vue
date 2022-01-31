@@ -27,17 +27,19 @@
   </div>
 </template>
 
-<script>
+<script lang="ts">
+import Vue from 'vue'
 import Date from "@/components/Date.vue";
+import { FetchReturn } from '@nuxt/content/types/query-builder';
 
-export default {
+export default Vue.extend({
   name: "blogs",
   components: {
     Date,
   },
   data() {
     return {
-      blogs: [],
+      blogs: [] as FetchReturn[],
     };
   },
   async fetch() {
@@ -45,7 +47,7 @@ export default {
       .only(["title", "slug", "description", "createdAt", "date", "tags"])
       .sortBy("date", "desc")
       .sortBy("createdAt", "desc")
-      .fetch();
+      .fetch() as FetchReturn[];
   },
-};
+})
 </script>
