@@ -1,0 +1,19 @@
+.notification {
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.notifications-enter-from {
+  transform: translateY(-2rem);
+  opacity: 0;
+}
+.notifications-leave-to {
+  transform: translateX(100%);
+  opacity: 0;
+}
+.notifications-move,
+.notifications-leave-active {
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+.notifications-leave-active {
+  position: absolute;
+}

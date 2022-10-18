@@ -1,0 +1,55 @@
+@charset "utf-8";
+
+/* Import Bulma Utilities */
+@import "../../node_modules/bulma/sass/utilities/_all";
+
+/* Import our defined variables */
+@import "./variables.scss";
+
+/* Import the rest of Bulma */
+@import "../../node_modules/bulma/bulma.sass";
+
+/* Import some transitions styles */
+@import "./transitions.scss";
+
+.page-enter-active,
+.page-leave-active {
+  transition: opacity 0.15s;
+}
+.page-enter,
+.page-leave-to {
+  opacity: 0;
+}
+
+body {
+  height: 100vh;
+  position: relative;
+}
+#app {
+  height: 100%;
+}
+#notification-container {
+  position: fixed;
+  right: 0;
+  top: $navbar-height;
+}
+#notification-area {
+  padding: 1rem;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: flex-end;
+  position: relative;
+}
+
+#resizable-area {
+  position: fixed;
+  pointer-events: none;
+  z-index: 1000;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  * {
+    pointer-events: all;
+  }
+}
