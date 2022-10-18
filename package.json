@@ -9,9 +9,12 @@
   },
   "devDependencies": {
     "@nuxt/content": "^2.1.1",
-    "nuxt": "3.0.0-rc.11"
+    "@nuxt/test-utils-edge": "^3.0.0-rc.12-27767306.96a8807",
+    "nuxt": "3.0.0-rc.11",
+    "vitest": "^0.24.3"
   },
   "dependencies": {
+    "@pinia/nuxt": "^0.4.3",
     "bulma": "^0.9.4",
     "date-fns": "^2.29.3",
     "sass": "^1.55.0"

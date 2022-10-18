@@ -1,4 +1,4 @@
-import { extractHighlights } from "../utils";
+import { extractHighlights } from "../components/notifications/utils";
 import { describe, test, expect } from "vitest";
 
 describe("extractHighlights", () => {
