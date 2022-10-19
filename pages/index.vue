@@ -6,5 +6,6 @@
         <p>{{ article.description }}</p>
       </div>
     </ContentList>
+    <Icon name="ic:baseline-announcement" />
   </main>
 </template>

@@ -5,6 +5,7 @@ export default defineNuxtConfig({
   },
   modules: [
     "@nuxt/content",
+    "nuxt-icon",
     ["@pinia/nuxt", { autoImports: ["defineStore", "acceptHMRUpdate"] }],
   ],
   imports: {
