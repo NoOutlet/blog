@@ -5,12 +5,11 @@ export default defineNuxtConfig({
   },
   modules: [
     "@nuxt/content",
-    "nuxt-icon",
+    "@unocss/nuxt",
     ["@pinia/nuxt", { autoImports: ["defineStore", "acceptHMRUpdate"] }],
   ],
   imports: {
     dirs: ["stores"],
   },
   ssr: false,
-  css: ["bulma"],
 });
